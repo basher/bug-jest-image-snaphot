@@ -4,12 +4,12 @@ It's a reduced test case to demonstrate "jest-image-snapshot" not working in Cre
 
 ## CRA unit & coverage tests
 
-- `yarn test` works OK for "App.test.js".
-- `yarn coverage` works OK, ignoring files & folders as specified in "package.json".
+- `yarn test` - works as expected for "./src/App.test.js".
+- `yarn coverage` - works as expected, processing all files & folders as specified in "collectCoverageFrom" inside "package.json".
 
 ## "jest-image-snapshot" test INSIDE CRA "./src/" folder
 
-- Uncomment "jest-image-snapshot" code in "./src/App.test.js" and run `yarn test`.
+- Uncomment "jest-image-snapshot" code inside "./src/App.test.js" and run `yarn test` again.
 - Get Node error "TypeError: matcher.apply is not a function".
 
 ## "jest-image-snapshot" test OUTSIDE CRA "./src/" folder
