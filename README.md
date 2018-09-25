@@ -1,0 +1,1 @@
+# bug-jest-image-snaphot
